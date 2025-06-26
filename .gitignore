@@ -1,0 +1,12 @@
+output/
+.idea/
+.DS_Store
+**/.DS_Store
+vendor/
+log/
+c.out
+*gen_test.go
+*.pyc
+**/gorm_gen/main.go
+tmp/
+**/temp/
