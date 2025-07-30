@@ -1,0 +1,187 @@
+name: 🗺️ Roadmap Planning
+description: Plan and discuss project roadmap items
+title: "[ROADMAP] "
+labels: ["roadmap", "planning", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to the Coze Loop roadmap planning!
+
+        **Note:** All roadmap discussions must be submitted in English.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "📋 Please ensure that:"
+      description: "Please confirm the following requirements:"
+      options:
+        - label: "I have reviewed existing roadmap items to avoid duplicates"
+          required: true
+        - label: "I have provided a clear vision and strategic value"
+          required: true
+        - label: "I understand this is for roadmap planning and not immediate implementation"
+          required: true
+        - label: "I am willing to help refine and prioritize this roadmap item"
+          required: false
+        - label: "I have submitted this roadmap item in English (otherwise it will not be processed)"
+          required: true
+
+  - type: textarea
+    id: vision-statement
+    attributes:
+      label: "🎯 Vision Statement"
+      description: "What is the long-term vision or strategic goal this roadmap item addresses?"
+      placeholder: "Our vision is to enable users to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: strategic-value
+    attributes:
+      label: "💎 Strategic Value"
+      description: "How does this roadmap item align with our overall product strategy and user needs?"
+      placeholder: "This roadmap item will help us achieve..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: quarter
+    attributes:
+      label: "📅 Target Quarter"
+      description: "Which quarter should this roadmap item be implemented?"
+      options:
+        - "Q1 2024 - January to March"
+        - "Q2 2024 - April to June"
+        - "Q3 2024 - July to September"
+        - "Q4 2024 - October to December"
+        - "Q1 2025 - January to March"
+        - "Q2 2025 - April to June"
+        - "Q3 2025 - July to September"
+        - "Q4 2025 - October to December"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: release-timing
+    attributes:
+      label: "🚀 Target Release"
+      description: "Which release within the quarter should this be included?"
+      options:
+        - "Early Release - First month of quarter"
+        - "Mid Release - Second month of quarter"
+        - "Late Release - Third month of quarter"
+        - "Flexible - Can be adjusted based on priority"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority-level
+    attributes:
+      label: "⚡ Priority Level"
+      description: "What is the priority level for this roadmap item?"
+      options:
+        - "Critical - Must have for quarter success"
+        - "High - Important for quarter goals"
+        - "Medium - Valuable but not critical"
+        - "Low - Nice to have if resources allow"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact-level
+    attributes:
+      label: "🚀 Impact Level"
+      description: "What is the expected impact of this roadmap item?"
+      options:
+        - "Transformational - Game-changing for the product"
+        - "High - Significant improvement to core functionality"
+        - "Medium - Important enhancement"
+        - "Low - Nice to have feature"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: "🔧 Complexity Level"
+      description: "What is the estimated complexity of implementing this roadmap item?"
+      options:
+        - "Simple - Quick implementation (1-2 weeks)"
+        - "Medium - Moderate effort required (2-4 weeks)"
+        - "Complex - Significant development effort (1-2 months)"
+        - "Very Complex - Major undertaking (2-3 months)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-benefits
+    attributes:
+      label: "👥 User Benefits"
+      description: "How will this roadmap item benefit our users?"
+      placeholder: |
+        - Benefit 1: [Description]
+        - Benefit 2: [Description]
+        - Benefit 3: [Description]
+    validations:
+      required: true
+
+  - type: textarea
+    id: business-value
+    attributes:
+      label: "💰 Business Value"
+      description: "What business value or competitive advantage will this provide?"
+      placeholder: "This roadmap item will help us..."
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: "🔗 Dependencies"
+      description: "What other features, infrastructure, or resources are needed before this can be implemented?"
+      placeholder: |
+        - Dependency 1: [Description]
+        - Dependency 2: [Description]
+
+  - type: textarea
+    id: success-metrics
+    attributes:
+      label: "📊 Success Metrics"
+      description: "How will we measure the success of this roadmap item?"
+      placeholder: |
+        - Metric 1: [Description]
+        - Metric 2: [Description]
+        - Metric 3: [Description]
+
+  - type: textarea
+    id: risks-challenges
+    attributes:
+      label: "⚠️ Risks & Challenges"
+      description: "What potential risks or challenges should we consider?"
+      placeholder: |
+        - Risk 1: [Description]
+        - Challenge 1: [Description]
+
+  - type: textarea
+    id: implementation-approach
+    attributes:
+      label: "🛠️ Implementation Approach"
+      description: "High-level approach to implementing this roadmap item."
+      placeholder: |
+        - Phase 1: [Description]
+        - Phase 2: [Description]
+        - Phase 3: [Description]
+
+  - type: textarea
+    id: stakeholder-feedback
+    attributes:
+      label: "🤝 Stakeholder Feedback"
+      description: "What feedback have you received from stakeholders, users, or team members?"
+      placeholder: "Share any relevant feedback or discussions..."
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "📝 Additional Context"
+      description: "Add any other context, research, or supporting information about this roadmap item."
+      placeholder: "Any additional information that might be helpful..."
