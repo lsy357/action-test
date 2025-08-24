@@ -1,0 +1,26 @@
+models:
+  # reasoning model
+  - id: 1
+    workspace_id: 0 # In the future, there will be the concept of public/private workspaces. Public models are managed by the public workspace, private models by the private workspace. Currently, all models belong to the public workspace, and the public workspace id is temporarily set to 0.
+    name: "deepseek-r1"
+    frame: "eino"
+    protocol: "ark"
+    protocol_config:
+      api_key: "asdf1234-asdf-1234-asdf-asdf1234qwer"
+      model: ""
+    param_config:
+      param_schemas:
+        - name: "temperature"
+          label: "temperature"
+          desc: "Increasing temperature will make the model output more diverse and creative. Conversely, lowering the temperature will make the output more compliant with instructions but reduce diversity. It is recommended not to adjust together with 'Top p'."
+          type: "float"
+          min: "0"
+          max: "1.0"
+          default_val: "0.7"
+        - name: "max_tokens"
+          label: "max_tokens"
+          desc: "Controls the maximum length of model output tokens. Typically, 100 tokens are about 150 Chinese characters."
+          type: "int"
+          min: "1"
+          max: "8192"
+          default_val: "2048"
